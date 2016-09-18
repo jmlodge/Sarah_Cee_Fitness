@@ -1,0 +1,22 @@
+{
+  "name": "sarah_cee_fitness",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "jmlodge <jm-lodge@hotmail.co.uk>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jmlodge/Sarah_Cee_Fitness",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}
