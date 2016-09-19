@@ -1,0 +1,59 @@
+
+
+
+
+/* nav style */
+
+.navbar {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	margin-top: 45px;
+	background: linear-gradient(to right, rgba(0,204,204, 0.4), rgba(0,128,128, 1)); 
+	border-bottom: none;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #ff8233
+}
+
+.navbar-default .navbar-nav li a:hover, 
+.navbar-default .navbar-nav li a:focus {
+color: #ff8533;  /*Sets the text hover color on navbar*/
+}
+
+.nav li {
+	border-bottom: 2px solid transparent;
+	border-top: 2px solid transparent;
+}
+
+.nav li:hover,
+.nav li:focus {
+
+    text-decoration: none;
+    border-bottom: 2px solid #ff8533; /*Change rollover cell color here*/
+  }
+
+  /* home style */
+
+#banner{
+	position: relative;
+    max-width: 100%;
+    height: auto;
+    left: 0px;
+    right: 0px;
+}
+
+#myImage{
+    width: 100%;
+    height: auto;
+    left: 0px;
+    right: 0px;
+}
+
+.bannerText {
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	color: #ff8533;
+}
