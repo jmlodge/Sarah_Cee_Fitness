@@ -53,8 +53,19 @@ color: #ff8533;  /*Sets the text hover color on navbar*/
 }
 
 .bannerText {
+	
 	position: absolute;
 	top: 60%;
 	left: 60%;
+	width:20%;
+	height: 5%;
+	background: linear-gradient(to right, rgba(0,204,204, 0.4), rgba(0,128,128, 1));
+	border:2px solid #ff8533; 
+	text-align: center;
+	
+}
+
+.bannerText h3 {
 	color: #ff8533;
+	margin: auto;
 }
