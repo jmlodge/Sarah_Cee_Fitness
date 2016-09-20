@@ -13,6 +13,10 @@
 	border-bottom: none;
 }
 
+.navbar-default .navbar-header a {
+	color: #ff8533;
+}
+
 .navbar-default .navbar-nav li a {
 	color: #ff8233
 }
