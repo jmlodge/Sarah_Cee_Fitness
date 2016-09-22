@@ -33,7 +33,43 @@ color: #ff8533;  /*Sets the text hover color on navbar*/
 
     text-decoration: none;
     border-bottom: 2px solid #ff8533; /*Change rollover cell color here*/
-  }
+}
+
+
+.navbar-toggle.collapsed .top-bar {
+  	transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  	opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  	transform: rotate(0);
+}
+
+.navbar-toggle {
+	border: none;
+    background: transparent !important;
+}
+.navbar-toggle:hover {
+  	background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  	width: 22px;
+  	transition: all 0.4s;
+  	background-color: #ff8533 !important;
+}
+.navbar-toggle .top-bar {
+  	transform: rotate(45deg);
+  	transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  	opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  	transform: rotate(-45deg);
+  	transform-origin: 10% 90%;
+}
+
 
   /* home style */
 
