@@ -106,6 +106,26 @@ color: #ff8533;  /*Sets the text hover color on navbar*/
 	margin: auto;
 }
 
+/* service home */
+
+.serviceRow {
+	margin-top: 5%;
+}
+
+div.serviceSlide {
+	text-align: center;
+	position: relative;
+}
+
+div.serviceSlide div {
+	width: 90%;
+	padding: 0;
+    display: none; 
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* carousel */
 
 #quote-carousel {
