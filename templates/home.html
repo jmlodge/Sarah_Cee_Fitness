@@ -1,12 +1,12 @@
 <div class="banner">
 	<img src="img/jwj.png" class="myImage" >
 	<div class="bannerText">
-		<h3>Start Your Journey Today.</h3>
+		<h1>Start Your Journey Today.</h1>
 	</div>	
 </div>
 
 
-<div class="container-fluid">
+<div class="container-fluid" id="scrollTo">
 	<div class="row serviceRow">
 
         <h2>Services</h2>
@@ -16,7 +16,8 @@
 				<img class="img-responsive center-block" src="img/nutrition.jpg">
 				<div class="overlay">
 					<h2>Nutrition</h2>
-                    <p><a href="#">Click Here</a></p>
+                    <p>Something about nutrition</p>
+                    <p><a data-toggle="modal" href="#myModalNutrition" target="_self" class="button">Click Here</a></p>
 				</div>
 			</div>	
 		</div>
@@ -26,7 +27,8 @@
                 <img class="img-responsive center-block" src="img/group.jpg">
                 <div class="overlay">
                     <h2>Group PT</h2>
-                    <p><a href="#">Click Here</a></p>
+                    <p>Something about group PT</p>
+                    <p><a data-toggle="modal" href="#myModalGroup" target="_self" class="button">Click Here</a></p>
                 </div>
             </div>  
 		</div>
@@ -36,12 +38,89 @@
                 <img class="img-responsive center-block" src="img/onetoone.jpg">
                 <div class="overlay">
                     <h2>One To One</h2>
-                    <p><a href="#">Click Here</a></p>
+                    <p>Something about One to One</p>
+                    <p><a data-toggle="modal" href="#myModalOne" target="_self" class="button">Click Here</a></p>
                 </div>
             </div>  
 		</div>
 	</div>
 </div>
+
+<div class="modal fade" id="myModalNutrition" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Tailored Nutrition Plan</h4>
+        </div>
+        <div class="modal-body">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+         <h4>Price</h4>
+         <p>£##.##</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="myModalGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Group PT</h4>
+        </div>
+        <div class="modal-body">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+         <h4>Price</h4>
+         <p>£##.## / hour</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="myModalOne" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">One To One PT</h4>
+        </div>
+        <div class="modal-body">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+         <h4>Price</h4>
+         <p>£##.## / hour</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
 
 <div id="caroID" class="container">
         <div class="row">
@@ -97,8 +176,8 @@
                     </ol>
 
                     <!-- Carousel Buttons Next/Prev -->
-                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                    <a data-slide="prev" href="#quote-carousel" target="_self" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" target="_self" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
                 </div>
             </div>
         </div>

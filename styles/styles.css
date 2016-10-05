@@ -30,6 +30,12 @@ h2 {
 	border-bottom: none;
 }
 
+@media (max-width: 600px) {
+	.navbar {
+		margin-top: 0;
+	}
+}
+
 .navbar-default .navbar-header a {
 	color: #ff8533;
 }
@@ -118,15 +124,15 @@ color: #ff8533;  /*Sets the text hover color on navbar*/
 	left: 60%;
 	width:20%;
 	height: 5%;
-	background: linear-gradient(to right, rgba(0,204,204, 0.4), rgba(0,128,128, 1));
-	border:2px solid #ff8533; 
 	text-align: center;
 	
 }
 
-.bannerText h3 {
+.bannerText h1 {
 	color: #ff8533;
 	margin: auto;
+	font-family: "bite-the-bullet";
+	font-weight: bolder;
 }
 
 /* about */
@@ -137,19 +143,39 @@ color: #ff8533;  /*Sets the text hover color on navbar*/
 	margin-top: 45%;
 	margin-bottom: auto;
 	border: 2px solid #008080;
+	border-radius: 50px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .aboutText {
-	width: 90%;
+	width: 100%;
 	height: auto;
 	margin-top: 45%;
 	margin-bottom: auto;
+	font-family: "bite-the-bullet";
+	font-size: 20px;
 }
 
 
 /* service */
 
+.modal-content {
+	background-color: #ff8533;
+	font-family: "bite-the-bullet";
+	color:#008080;
+	font-weight: bold;
+	font-size: 20px;
 
+}
+
+.modal-title {
+	font-family: "bite-the-bullet";
+	color: #008080;
+	font-weight: bolder;
+	font-size: 28px;
+}
 
 /* service hover */
 
@@ -307,6 +333,10 @@ color: #ff8533;  /*Sets the text hover color on navbar*/
     font-family: 'Fontawesome';
     float: left;
     margin-right: 10px;
+}
+
+.fa {
+	color: #ff8533; 
 }
 
 /* footer */
