@@ -350,7 +350,8 @@ color: #ff8533;  /*Sets the text hover color on navbar*/
 	font: normal 16px sans-serif;
 
 	padding: 45px 50px;
-	margin-top: 80px;
+	overflow: hidden;
+	/*margin-top: 80px;*/
 }
 
 .footer-distributed .footer-left p {

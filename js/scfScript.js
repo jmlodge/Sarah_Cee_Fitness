@@ -10,7 +10,7 @@ $(document).ready(function(){
     $('#footerBottom').css('margin-top', (docHeight - footerTop * 10) + 'px');
    	}
  
- 	$('a[href*=services]').on('click', function(event){     
+ 	$("#services").on('click', function(event){     
 	    event.preventDefault();
 	    $('html,body').animate({scrollTop:$(this, "#scrollTo").offset().top}, 500);
 	});
