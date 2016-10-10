@@ -1,4 +1,4 @@
-var app = angular.module('sarahCeeApp', ['ngRoute', 'scfControllers'])
+var app = angular.module('sarahCeeApp', ['ngRoute', 'scfControllers', 'scfDirectives'])
 .config(function($routeProvider) {
 
     $routeProvider.when("/", {

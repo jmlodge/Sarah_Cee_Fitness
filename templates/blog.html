@@ -2,13 +2,15 @@
 	<div class="row header">
 		<h1>My Blog</h1>
 	</div>
-	<div class="col-md-10 col-md-offset-1">
-		<div ng-repeat="item in blogContent">
-			<div class="blogItem">
-				<h2 class="blogHeader">{{item.title}}</h2>
-				<h4 class="blogDate">Posted on {{item.date}}</h4>
-				<p ng-bind-html= " item.content "></p>
+	<div class="row page-internal">
+		<div class="col-md-10 col-md-offset-1">
+			<div ng-repeat="item in blogContent">
+				<div class="blogItem">
+					<h2 class="blogHeader">{{item.title}}</h2>
+					<h4 class="blogDate">Posted on {{item.date}}</h4>
+					<p ng-bind-html= " item.content "></p>
+				</div>
 			</div>
-		</div>
+		</div>	
 	</div>
 </div>
