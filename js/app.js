@@ -6,7 +6,8 @@ var app = angular.module('sarahCeeApp', ['ngRoute', 'scfControllers', 'scfDirect
     })
 
     $routeProvider.when("/about", {
-    	templateUrl: "templates/about.html"
+    	templateUrl: "templates/about.html",
+        controller: "BlogController"
     })
 
     $routeProvider.when("/blog", {
