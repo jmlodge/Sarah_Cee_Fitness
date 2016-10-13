@@ -5,10 +5,12 @@
 	<div class="row page-internal">
 		<div class="col-md-10 col-md-offset-1">
 			<div ng-repeat="item in blogContent">
+
 				<div class="blogItem">
+					<div class="blogImg"><img ng-src="{{item.img}}"></div>
 					<h2 class="blogHeader">{{item.title}}</h2>
 					<h4 class="blogDate">Posted on {{item.date}}</h4>
-					<p ng-bind-html= " item.content "></p>
+					<p class="blogArticle">{{item.content}}</p>
 				</div>
 			</div>
 		</div>	

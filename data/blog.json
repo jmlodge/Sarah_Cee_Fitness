@@ -3,21 +3,21 @@
 		"id": "1",
 		"title": "Goal Setting For a Happier You!",
 		"date": "2015-10-21",
-		"img": "",
+		"img": "/img/success.jpg",
 		"content": "I’ve been thinking a LOT about goal setting recently. We kind of know by now that they are really effective and important if you want to be successful and happy in any area of your life, and that’s all good." 
 	},
 	{
 		"id": "2",
 		"title": "My Decaf Experiment",
 		"date": "2015-11-13",
-		"img": "",
+		"img": "/img/coffee.jpg",
 		"content": "Okay, before we get started, I would just like to point out that I am using the word ‘experiment’ arbitrarily, it is by no means a scientific study – it is merely based on observations of my own body and experience. And just to be clear, I am not against caffeinated coffee."
 	},
 	{
 		"id": "3",
 		"title": "How to Start off a Great New Year",
 		"date": "2016-01-04",
-		"img": "",
+		"img": "/img/newYear.jpg",
 		"content": "Anyone else feel like this?"
 	}
 ]

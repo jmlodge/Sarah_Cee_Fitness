@@ -4,7 +4,7 @@ $(document).ready(function(){
 
    	var docHeight = $(window).height();
    	var footerHeight = $('#footerBottom').height();
-   	var footerTop = $('#footerBottom').position().top + footerHeight;
+   	var footerTop = $('#footerBottom').position() + footerHeight;
     console.log(footerTop)
 
    	if (footerTop < docHeight) {
