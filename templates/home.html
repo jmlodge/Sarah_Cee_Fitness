@@ -1,4 +1,4 @@
-<div class="banner">
+<div class="banner" scroll-bookmark="bookmark1">
 	<img src="img/jwj.png" class="myImage" >
 	<div class="bannerText">
 		<h1>Start Your Journey Today.</h1>
@@ -6,14 +6,17 @@
 </div>
 
 
-<div class="container-fluid" id="scrollTo">
+<div class="container-fluid" scroll-bookmark>
 	<div class="row serviceRow">
 
         <h2>Services</h2>
 	
 		<div class="col-xs-12 col-md-4">
 			<div class="hovereffect">
-        				<img class="img-responsive center-block" src="img/nutrition.jpg">
+        				<div class="serviceImage">
+                <img class="img-responsive center-block" src="img/nutrition.jpg">
+                <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                </div>
         				<div class="overlay">
 				            <h2 class="servicetxt">Nutrition</h2>
                     <p class="servicePara">Something about nutrition</p>
@@ -24,7 +27,10 @@
 
 		<div class="col-sm-12 col-md-4">
 			<div class="hovereffect">
+                <div class="serviceImage">
                 <img class="img-responsive center-block" src="img/group.jpg">
+                <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                </div>
                 <div class="overlay">
                     <h2 class="servicetxt">Group PT</h2>
                     <p class="servicePara">Something about group PT</p>
@@ -35,7 +41,10 @@
 
 		<div class="col-sm-12 col-md-4">
 			<div class="hovereffect">
+                <div class="serviceImage">
                 <img class="img-responsive center-block" src="img/onetoone.jpg">
+                <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                </div>
                 <div class="overlay">
                     <h2 class="servicetxt">One To One</h2>
                     <p class="servicePara">Something about One to One</p>
@@ -44,6 +53,13 @@
             </div>  
 		</div>
 	</div>
+
+  <div class="row">
+    <div class="topArrow">
+      <a class="fa fa-arrow-circle-o-up" scroll-to-bookmark="bookmark1"></a>
+      <p>Top</p>
+    </div>
+  </div>
 </div>
 
 <div class="modal fade" id="myModalNutrition" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

@@ -1,14 +1,21 @@
 $(document).ready(function(){
 
- 	
+	$(window).scroll(function () {
+	   
+	    if ($(window).scrollTop() < 80) {
+	      $('#nav_bar').addClass('navMargin');
+	    }
+	    if ($(window).scrollTop() > 80) {
+	      $('#nav_bar').removeClass('navMargin');
+	    }
+  	});
 
-   	var docHeight = $(window).height();
-   	var footerHeight = $('#footerBottom').height();
-   	var footerTop = $('#footerBottom').position() + footerHeight;
-    console.log(footerTop)
-
-   	if (footerTop < docHeight) {
-    $('#footerBottom').css('margin-top', (docHeight - footerTop * 10) + 'px');
-   	}
+	$(function() {
+    	$('.nav a').on('click', function(){ 
+	        if($('.navbar-toggle').css('display') !='none'){
+	            $(".navbar-toggle").trigger('click');
+	        }
+	    });
+	});
     
 });
