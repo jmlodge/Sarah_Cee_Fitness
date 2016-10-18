@@ -15,7 +15,8 @@ var app = angular.module('sarahCeeApp', ['ngRoute', 'scfControllers', 'scfDirect
     })
 
     $routeProvider.when("/contact", {
-    	templateUrl: "templates/contact.html"
+    	templateUrl: "templates/contact.html",
+        controller: 'ContactController'
     })
 });
 

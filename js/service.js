@@ -12,6 +12,8 @@ app.service("BlogService", function($http, $q) {
 });
 
 
+
+
 //app.service("NewsListService", function($http, $q) {
 //	var deferred = $q.defer();
 //	$http.get('data/news.json').then(function (data) {

@@ -41,67 +41,69 @@
 <div class="container form-margin">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2">
-			
-			<form id="contact-form" method="post" action="contact.php" role="form">
-			<div class="messages"></div>
-				<div class="controls">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<label for="firstName">First Name *</label>
-								<input id="firstName" type="text" name="name" class="form-control" placeholder="Please enter your First Name *" required="required" data-error="First Name is required">
-								<div class="help-block with-errors"></div>
+			<div ng-controller="ContactController">
+				<form ng-submit="submit(contactform)" name="contactform" method="post" role="form">
+				
+					<div class="controls">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group" ng-class="{ 'has-error': contactform.firstName.$invalid && submitted }">
+									<label for="firstName">First Name *</label>
+									<input ng-model="formData.firstName" id="firstName" type="text" name="firstName" class="form-control" placeholder="Please enter your First Name *" required="required">
+									
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group" ng-class="{ 'has-error': contactform.lastName.$invalid && submitted }">
+									<label for="lastName">Last Name *</label>
+									<input ng-model="formData.lastName" id="lastName" type="text" name="lastName" class="form-control" placeholder="Please enter your Last Name *" required="required" data-error="Last Name is required">
+									
+								</div>
 							</div>
 						</div>
 
-						<div class="col-md-6">
-							<div class="form-group">
-								<label for="lastName">Last Name *</label>
-								<input id="lastName" type="text" name="surname" class="form-control" placeholder="Please enter your Last Name *" required="required" data-error="Last Name is required">
-								<div class="help-block with-errors"></div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group" ng-class="{ 'has-error': contactform.formEmail.$invalid && submitted }">
+									<label for="formEmail">E-Mail *</label>
+									<input ng-model="formData.formEmail" id="formEmail" type="email" name="formEmail" class="form-control" placeholder="Please enter your E-Mail *" required="required" data-error="A valid E-Mail address is required">
+									
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group" ng-class="{ 'has-error': contactform.fromPhone.$invalid && submitted }">
+									<label for="fromPhone">Phone</label>
+									<input ng-model="formData.fromPhone" id="fromPhone" type="tel" name="fromPhone" class="form-control" placeholder="Please enter your phone number">
+									
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group" ng-class="{ 'has-error': contactform.formMessage.$invalid && submitted }">
+									<label for="formMessage">Message *</label>
+									<textarea ng-model="formData.formMessage" id="formMessage" name="formMessage" class="form-control" placeholder="Your Message *" rows="5" required="required" data-error="Please enter your message in Message field"></textarea>
+									
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<input type="submit" class="btn btn-success btn-send" ng-disabled="sumbitButtonDisabled" value="Send">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<p class="text-muted">Fields marked with <strong>*</strong> are required</p>
 							</div>
 						</div>
 					</div>
-
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<label for="formEmail">E-Mail *</label>
-								<input id="formEmail" type="email" name="email" class="form-control" placeholder="Please enter your E-Mail *" required="required" data-error="A valid E-Mail address is required">
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="form-group">
-								<label for="fromPhone">Phone</label>
-								<input id="fromPhone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone number">
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-md-12">
-							<div class="form-group">
-								<label for="formMessage">Message *</label>
-								<textarea id="formMessage" name="message" class="form-control" placeholder="Your Message *" rows="5" required="required" data-error="Please enter your message in Message field"></textarea>
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-
-						<div class="col-md-12">
-							<input type="subit" class="btn btn-success btn-send" value="Send">
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-md-12">
-							<p class="text-muted">Fields marked with <strong>*</strong> are required</p>
-						</div>
-					</div>
-				</div>
-			</form>
+				</form>
+				<p ng-class="result" style="padding: 15px; margin: 0;">{{ resultMessage }}</p>
+			</div>
 		</div>
 	</div>
 </div>
