@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: "bite-the-bullet";
-	src: url("fonts/Bite _ Bullet.ttf") format("truetype");
+	src: url("fonts/Bite _ Bullet.ttf") format("truetype"); /* not used due to licence */
 }
 
 /* background*/
@@ -17,6 +17,14 @@ h1, h2 {
 	font-family: "Shadows Into Light";
 	font-size: 40px;
 	color: #ff8533;
+	margin-bottom: 25px;
+}
+
+h4 {
+	font-family: "Shadows Into Light";
+	font-size: 26px;
+	color: #ff8533;
+	margin-bottom: 0;
 }
 
 p {
@@ -243,10 +251,6 @@ a {
 	transform: translate3d(50%,50%,0);
 }
 
-.hovereffect:hover .overlay {
-	background-color: rgba(0,0,0,0.6);
-}
-
 .hovereffect img {
 	display: block;
 	position: relative;
@@ -258,20 +262,8 @@ a {
 	transition: all 0.35s;
 }
 
-.hovereffect:hover img {
-	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.4" /><feFuncG type="linear" slope="1.4" /><feFuncB type="linear" slope="1.4" /></feComponentTransfer></filter></svg>#filter');
-	filter: brightness(1.4);
-	-webkit-filter: brightness(1.4);
-}
 
-.hovereffect .servicetxt {
-	text-transform: uppercase;
-	text-align: center;
-	position: relative;
-	font-size: 25px;
-	font-weight: bold;
-	padding: 10px;
-	background-color: transparent;
+.hovereffect .serviceLink {
 	color: #ff8533;
 	padding: 1em 0;
 	opacity: 0;
@@ -282,9 +274,9 @@ a {
 	transform: translate3d(-150%,-400%,0);
 }
 
-.hovereffect .serviceLink, .hovereffect .servicePara {
+.hovereffect .servicePara {
 	color: #ff8533;
-	padding: 0.5em 0;
+	padding: 2.3em 0;
 	opacity: 0;
 	filter: alpha(opacity=0);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -293,11 +285,25 @@ a {
 	transform: translate3d(-150%,-400%,0);
 }
 
-.hovereffect:hover .serviceLink, .hovereffect:hover .servicePara, .hovereffect:hover .servicetxt, .hovereffect:hover .overlay {
+
+
+@media (min-width: 990px) {
+	.hovereffect:hover img {
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.4" /><feFuncG type="linear" slope="1.4" /><feFuncB type="linear" slope="1.4" /></feComponentTransfer></filter></svg>#filter');
+	filter: brightness(1.4);
+	-webkit-filter: brightness(1.4);
+}
+
+	.hovereffect:hover .overlay {
+	background-color: rgba(0,0,0,0.6);
+}
+
+	.hovereffect:hover .serviceLink, .hovereffect:hover .servicePara, .hovereffect:hover .overlay {
 	opacity: 1;
 	filter: alpha(opacity=100);
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+	}
 }
 
 .serviceRow {
